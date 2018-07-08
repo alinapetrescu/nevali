@@ -1,0 +1,80 @@
+body{
+	background-color: black;
+	color:white;
+}
+a {
+	color:DeepPink;
+}
+
+a:visited{
+	color:DeepPink !important;
+}
+
+#homeTitle{
+	background-image: url(floconNoir3.gif);
+	font-size:250%;
+}
+
+h1{
+	color:Gold;
+	text-align:center;
+	text-shadow:2px 2px Gray;
+	/*margin-bottom:60px;*/
+	font-family: sans-serif;
+	font-size:400%;
+}
+
+#subtitle{
+	text-align:center;
+	border:0;
+	margin:0;
+	padding:0; 
+	font-size:60%;
+	text-shadow:none;
+}
+
+#bodydiv{
+/*	border:solid;
+	border-radius:5px; /* */
+	display: block;
+	position:relative;
+	margin-left:7.5%; 
+	margin-right:7.5%;
+	margin-bottom:50px;
+}
+
+#homepage{
+	position: absolute;
+	margin-left:0px;
+	margin-bottom:0px;
+	float: left;
+	/*font-family: sans-serif;*/
+}
+
+.divComment{
+	color:white;
+	box-shadow: 0px 0px 20px rgb(153, 153, 153);
+	border-radius: 3px;
+}
+
+.news{
+	margin-top:2%;
+	color:white;
+	text-align:left;
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+	-moz-column-gap:40px; /* Firefox */
+	-webkit-column-gap:40px; /* Safari and Chrome */
+	column-gap:40px;
+}
+
+table.tables{
+/*	border:solid;
+	border-radius:5px; /* For debugging Product tables */
+    margin-top:2%;
+    float:left;
+    width:33.3%;
+    margin-bottom:50px;
+}
+

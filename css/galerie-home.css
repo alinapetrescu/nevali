@@ -1,0 +1,66 @@
+.imagemenu{
+					/*float: left;*/
+	text-decoration:none;
+}
+.imagemenutag{
+ 	/* image never smaller than container */
+ 	min-width: 100%;
+ 	min-height: 100%; 	
+}
+
+#galerie-menu {
+	width:100%;
+	/*margin:3em auto;*/
+	border:solid;
+	border-radius:5px;
+	box-shadow:1px 1px 3px gray;
+	text-align:right;
+	position:relative;
+	overflow:hidden;
+	margin-top:80px;
+	margin-bottom:50px;
+	}
+	
+#galerie-menu a { /*Pour toutes les ancres */
+	display:inline-block;
+	vertical-align:top;
+	width:14%;
+	height:320px; /*absolu!!!*/
+	position:relative;
+	z-index:1;
+	box-shadow:0 0 15px white;
+	transition:1s;
+	}
+	
+	#galerie-menu a:first-child { /*Premier lien (News) */
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:0;
+	}
+
+#galerie-menu a:hover , #galerie-menu a:focus {  /*Quand on passe dessus*/
+	width:29.75%;
+	transition: 1s;
+	-webkit-transition: width 1s;
+	}
+	
+#galerie-menu a:before { /*Etiquette "News", "Dresses", etc... */
+	content:attr(title);
+	text-align:left;
+	height:10%;
+	width:68%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding-right:60%;
+	font-size:150%;
+	color:white;
+	border:1px solid gray;
+	box-shadow:0 0 15px white;
+	background:rgba(0,0,0,0.3);
+	transform-origin:17px;
+	line-height:100%;
+	}
+

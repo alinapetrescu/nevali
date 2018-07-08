@@ -1,0 +1,57 @@
+.imagemenu{
+					position: absolute;
+					vertical-align:bottom;
+					text-decoration:none;
+					/* min-width: 100%; */	
+}
+#galerie-menu .imagemenutag{
+					position: absolute; /* par rapport au conteneur*/
+					bottom: 0px; /* bas de l'image */
+					left:	0px;   /*image calée à gauche*/
+					min-width: 100%; /* image s'étire si pas assez large*/
+					z-index: -1 /*image derriere le texte*/	
+}
+#galerie-menu {
+	width:100%;
+	/*margin:3em auto;*/
+	border:solid;
+	border-radius:5px;
+	box-shadow:1px 1px 3px gray;
+	text-align:right;
+	position:relative;
+	overflow:hidden;
+	}
+#galerie-menu a {
+	display:inline-block;
+	vertical-align:top; /* not useful*/
+	width:13.5%;
+	height:50px; /* hauteur de la barre */
+	position:relative;
+	z-index:1;
+	box-shadow:0 0 15px white;
+	transition:1s;
+	}
+#galerie-menu a:hover , #galerie-menu a:focus {
+	width:25%;
+	transition: width 1s;
+	-webkit-transition: width 1s;
+	}
+#galerie-menu a:first-child {
+	width:60%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:0;
+	}
+#galerie-menu a:before {
+	content:attr(title);
+	text-align:left;
+	height:26px; /* postitionne le texte*/
+	width:80%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding-right:60%; /* permet de déborder la barre du texte au plus loin */
+	font-size:150%;
+	color:white;
+}
